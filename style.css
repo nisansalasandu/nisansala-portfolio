@@ -1,0 +1,85 @@
+:root {
+  --accent: #4b0082;
+  --bg: #f4f4f9;
+  --card: #ffffff;
+}
+
+body {
+  font-family: "Inter", system-ui, Segoe UI, Arial, sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: #222;
+}
+
+.nav {
+  background: linear-gradient(90deg, var(--accent), #6a0dad);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.container {
+  max-width: 980px;
+  margin: -40px auto 40px;
+  padding: 1rem;
+}
+
+.card {
+  background: var(--card);
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin: 1rem 0;
+  box-shadow: 0 8px 20px rgba(20, 20, 40, 0.08);
+}
+
+h1 {
+  margin: 0.2rem 0;
+}
+
+p.lead {
+  color: #333;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 1rem;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.badge {
+  background: #f0eef8;
+  padding: 0.3rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  color: var(--accent);
+}
+
+.project {
+  border-left: 4px solid rgba(75, 0, 130, 0.2);
+  padding: 0.6rem;
+  margin: 0.6rem 0;
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.contact a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+@media (max-width: 880px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
